@@ -1,42 +1,48 @@
 import React from "react";
 import Card from "./Card";
+import Cakery from "../assets/cakery.svg";
+import WeatherApp from "../assets/weather-app.svg";
+import Dashboard from "../assets/dashboard.svg";
+import SocialMedia from "../assets/social-media.svg";
+import LandingPage from "../assets/landingpage.svg";
+import Checkout from "../assets/checkout.svg";
 
 const DesCardList = ({ numCards }) => {
   const cards = [
     {
       title: "Home Monitoring Dashboard",
       description: "Figma",
-      image: "https://via.placeholder.com/300x200",
+      image: Dashboard,
       url: "https://www.behance.net/gallery/165312305/Home-Monitoring-Dashboard?",
     },
     {
       title: "Social Media App",
       description: "Figma. Flat UI Design",
-      image: "https://via.placeholder.com/300x200",
+      image: SocialMedia,
       url: "https://www.behance.net/gallery/159199033/Social-Media-App",
     },
     {
       title: "Weather App",
       description: "Figma, Glassmorphism, Neumorphism",
-      image: "https://via.placeholder.com/300x200",
+      image: WeatherApp,
       url: "https://www.behance.net/gallery/159202791/Weather-App-UI",
     },
     {
       title: "Clothing Store Landing Page",
       description: "Figma",
-      image: "https://via.placeholder.com/300x200",
+      image: LandingPage,
       url: "https://www.behance.net/gallery/159196381/Clothing-Store-Landing-Page",
     },
     {
       title: "Credit Card Checkout",
       description: "Figma",
-      image: "https://via.placeholder.com/150",
+      image: Checkout,
       url: "https://www.behance.net/gallery/159202481/Credit-Card-Checkout",
     },
     {
       title: "Cakery - Cake Shop Landing Page",
       description: "Figma",
-      image: "https://via.placeholder.com/150",
+      image: Cakery,
       url: "https://www.behance.net/gallery/193258893/Cakery-Cake-Shop-Landing-Page",
     },
   ];
