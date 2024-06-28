@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,13 +24,19 @@ const Navbar = () => {
     };
   }, []);
 
+  const isHomePage = location.pathname === "/";
+
   return (
     <div
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled ? "bg-[#F6F0DE] shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="bg-[#F6F0DE] flex justify-between items-center font-roboto-mono py-8 text-[#1e1e1e] relative">
+      <div
+        className={`${
+          isHomePage ? "bg-transparent" : "bg-[#F6F0DE]"
+        } flex justify-between items-center font-roboto-mono py-8 text-[#1e1e1e] relative`}
+      >
         <h1 className="font-medium mx-20 text-2xl hover:font-bold transform hover:scale-125 transition duration-300">
           garima bang.
         </h1>
