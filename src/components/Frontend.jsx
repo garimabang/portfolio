@@ -3,10 +3,14 @@ import Red from "../assets/redrec.svg";
 import FeCardList from "./FeCardList";
 import { Link } from "react-router-dom";
 
-const Frontend = ({ hideButton, numCards }) => {
+const Frontend = ({ hideButton, numCards, marginTop }) => {
   return (
     <>
-      <div className="flex justify-between mx-10 md:mx-20 lg:mx-40 mt-20 items-center">
+      <div
+        className={`flex justify-between mx-10 md:mx-20 lg:mx-40 ${
+          marginTop ? marginTop : "mt-20"
+        } items-center`}
+      >
         <div className="flex items-center mt-10">
           <img src={Red} alt="Redrec" className="h-2 w-2 mx-2" />
           <h1 className="font-roboto-mono font-medium text-lg lg:text-xl">
