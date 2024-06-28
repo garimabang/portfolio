@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -11,7 +11,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 const App = () => {
   return (
     <div className="bg-[#F6F0DE]">
-      <Router>
+      <HashRouter>
         <ScrollToTop />
         <Navbar />
         <Routes>
@@ -20,7 +20,7 @@ const App = () => {
           <Route path="/work" element={<Work />} />
         </Routes>
         <Footer />
-      </Router>
+      </HashRouter>
     </div>
   );
 };
