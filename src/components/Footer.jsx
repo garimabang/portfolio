@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="mt-40">
-      <footer className="bg-[#1e1e1e] text-white pt-8">
+    <>
+      <footer className="bg-[#1e1e1e] text-white pt-8 mt-40">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <div className="mb-4 lg:mb-0">
               <p className="text-3xl font-medium font-roboto-mono text-[#EC493E]">
-                garima bang.
+                <Link to="/">garima bang.</Link>
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mt-4 lg:mt-0">
@@ -66,7 +66,7 @@ function Footer() {
           </div>
         </div>
       </footer>
-    </div>
+    </>
   );
 }
 

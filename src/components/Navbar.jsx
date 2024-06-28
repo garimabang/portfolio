@@ -38,7 +38,7 @@ const Navbar = () => {
         } flex justify-between items-center font-roboto-mono py-8 text-[#1e1e1e] relative`}
       >
         <h1 className="font-medium mx-20 text-2xl hover:font-bold transform hover:scale-125 transition duration-300">
-          garima bang.
+          <Link to="/">garima bang.</Link>
         </h1>
         <nav>
           <div className="lg:hidden ">

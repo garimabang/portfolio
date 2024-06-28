@@ -13,7 +13,7 @@ const About = () => {
           <p className="text-sm md:text-lg lg:text-lg font-medium font-roboto-mono text-[#1e1e1e] my-4">
             Hi, I'm Garima Bang, a passionate UI/UX Designer and Front-end
             developer with expertise in Figma and ReactJs. I love creating
-            beautiful and functional websites and applications.being both
+            beautiful and functional websites and applications. Being both
             designer and developer allows me to make sure no detail is lost in
             translation.
           </p>
@@ -22,6 +22,9 @@ const About = () => {
             trends in technology. When I'm not coding, you can find me exploring
             new cafes, reading books, or experimenting with new recipes in the
             kitchen.
+          </p>
+          <p className="text-sm md:text-lg lg:text-lg font-medium font-roboto-mono text-[#1e1e1e] mb-8">
+            Thanks for stopping by my portfolio!
           </p>
         </div>
         <div className="lg:w-2/5 w-full">
