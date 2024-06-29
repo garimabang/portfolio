@@ -3,9 +3,9 @@ import React from "react";
 const Card = ({ title, description, image, url }) => {
   return (
     <div>
-      <div className="max-w-xs mx-auto relative overflow-hidden rounded border border-2 border-[#1e1e1e] shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+      <div className="flex flex-col justify-between max-w-xs mx-auto relative overflow-hidden rounded border border-2 border-[#1e1e1e] shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
         <img className="w-full h-56 object-cover" src={image} alt={title} />
-        <div className="p-4 bg-white">
+        <div className="flex-grow flex flex-col p-4 bg-white">
           <h3 className="text-xl font-medium text-gray-800 mb-2 font-roboto-mono">
             {title}
           </h3>
