@@ -26,6 +26,13 @@ const Navbar = () => {
 
   const isHomePage = location.pathname === "/";
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -37,7 +44,14 @@ const Navbar = () => {
           isHomePage ? "bg-transparent" : "bg-[#F6F0DE]"
         } flex justify-between items-center font-roboto-mono py-8 text-[#1e1e1e] relative`}
       >
-        <h1 className="font-medium mx-20 text-2xl hover:font-bold transform hover:scale-125 transition duration-300">
+        <h1
+          className="font-medium mx-20 text-2xl hover:font-bold transform hover:scale-125 transition duration-300"
+          onClick={() => {
+            if (location.pathname === "/") {
+              scrollToTop();
+            }
+          }}
+        >
           <Link to="/">garima bang.</Link>
         </h1>
         <nav>
@@ -60,7 +74,15 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="hover:font-medium transform hover:scale-125 transition duration-300">
-              <Link to="/about" onClick={() => setMenuOpen(false)}>
+              <Link
+                to="/about"
+                onClick={() => {
+                  if (location.pathname === "/") {
+                    scrollToTop();
+                  }
+                  setMenuOpen(false);
+                }}
+              >
                 About
               </Link>
             </li>
