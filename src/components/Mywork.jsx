@@ -9,8 +9,9 @@ function Mywork() {
         My Work
       </div>
       <div>
-        <Frontend numCards={3} marginTop="mt-0" />
         <Designer numCards={3} />
+        <Frontend numCards={3} marginTop="mt-0" />
+        
       </div>
     </>
   );
